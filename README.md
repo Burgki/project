@@ -1,14 +1,15 @@
-# Welcome to My Portfilio
+# ⚡Welcome to My Portfilio⚡
 
-My name is Puchong Saribut. I am learning about Data Analytics and Data Science and I am getting fun.
+My name is Puchong Saribut. I am learning about data analytics and data science, and it is fun.
+Actually, I did a lot more projects, but I am gathering them and moving them here.
 
-Anyone who has a recommendation, please contact me as following.
+Anyone who has a recommendation, please contact me as follows.
 
 
-Linkedin : https://www.linkedin.com/in/puchong-saribut/
+:link:Linkedin : https://www.linkedin.com/in/puchong-saribut/
 
-Email : puchong.srb@gmail.com
+:link:Email : puchong.srb@gmail.com
 
 Cheers!
 
-PS. I will update it later. Thanks for visiting me
+PS. I am looking for a job. Thanks for visiting me.
