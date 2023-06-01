@@ -1,4 +1,4 @@
-# ⚡Welcome to My Portfilio⚡
+# ⚡Welcome to My Portfolio⚡
 
 My name is Puchong Saribut. I am learning about data analytics and data science, and it is fun.
 Actually, I did a lot more projects, but I am gathering them and moving them here.
