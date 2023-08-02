@@ -1,4 +1,4 @@
-⚡SQL Portfolio 📚
+# ⚡SQL Portfolio 📚
 
 To demonstate my SQL skills, I summarized my knowlegde in above file.
 
