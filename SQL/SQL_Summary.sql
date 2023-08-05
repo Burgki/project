@@ -95,4 +95,60 @@ HAVING COUNT(field_name3) > integers
 ORDER BY new_fields_name --can use new name because this line is executed after aliasing
 LIMIT N:
 
---Joining
+---------Joining---------
+SELECT t1.field_name
+FROM table_1 AS t1
+INNER JOIN table_2 AS t2
+ON table_1.field_name = table_2.field_name;
+
+-- If two field names is same, USING is optional
+SELECT t1.field_name
+FROM table_1 AS t1
+INNER JOIN table_2 AS t2
+USING (field_name);
+
+-- There are many ways to do
+-- - Multiple joins
+-- - Joining on multiple keys (fields)
+
+INNER JOIN -- same data in two tables
+LEFT JOIN -- refer to left table
+RIGHT JOIN -- refer to right table
+FULL JOIN -- Get everything
+CROSS JOIN -- create all possible combinations of two tables
+-- SELF JOIN -- Join with themselves, use to compare parts of the same table 
+
+-- Set theory, we can query sets of data and do set operations
+UNION -- remove duplicates
+UNION ALL
+INTERSECT -- remove duplicates
+EXCEPT
+
+-- Subqueries
+-- - SEMI JOIN & ANTI JOIN
+SELECT *
+FROM table1
+WHERE field IN -- (IN|NOT IN)
+    (SELECT field
+    FROM table2
+    WHERE condition);
+
+-- - Subqueries inside WHERE
+SELECT *
+FROM some_table
+WHERE some_field IN
+    (include subquery here);
+
+-- - Subqueries inside SELECT
+SELECT DISTINCT field
+    (SELECT COUNT(*)
+    FROM table2
+    WHERE table1.field = table2.field) AS table2_count
+FROM table1;
+
+-- -Subqueries inside FROM
+SELECT left_table.id, left_val
+FROM left_table, right_table
+WHERE left_table.id = right_table.id;
+
+-------------------------------------------------------
